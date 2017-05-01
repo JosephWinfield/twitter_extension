@@ -17,7 +17,7 @@ export default class TweetList extends React.Component {
 			});
 
 			$.ajax({
-				url: 'http://localhost:3000/tweets',
+				url: 'https://twitter-ext.herokuapp.com/tweets',
 				contentType: 'application/json',
 				data: {url: domain}
 			}).done(data => {
